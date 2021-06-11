@@ -1,0 +1,130 @@
+header{
+    background-color: transparent;
+}
+footer{
+  display: inline-flex;
+  flex: 1;
+  background-color: tomato;
+  width: 100%;
+  align-content: center;
+  justify-content: center
+}
+footer h5{
+  padding: 5px;
+}
+.h2{
+  text-align: left;
+  font-family: 'Dosis';
+  padding-left: 5px;
+  padding-right: 5px;
+  padding:5px 5px 5px;
+
+}
+#icon1{
+    padding-right:3%;
+    font-size: 38px;
+}
+.flex-container {
+    display:flex;
+    background-color:transparent;
+    align-items:center;
+    flex-direction: row;
+  }
+.flex-container  div {
+    background-color: transparent;
+    padding-right: 40px;
+    flex: 4;
+  }
+  .foter{
+   bottom: 15px;
+   width: 100%;
+   background-color:transparent;
+   display:block;
+   margin: 10px;
+  }
+  .foter div{
+  display: flex;
+  flex-direction: row;
+  }
+  .form1{
+  background-color:transparent;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  flex: 40%;
+  }
+  input[type=submit] {
+    background-color:black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  input[type=text]{
+    height: 25px;
+    width: 40%;
+    background-color: transparent;
+    color: black;
+    padding: 10px auto ;
+    margin-bottom: 5px;
+    border-color: black;
+  }
+  input[type=tel]{
+    background-color: transparent;
+    color: black;
+    padding: auto;
+    height: 25px;
+    width: 40%;
+    margin-bottom: 5px;
+    border-color: black;
+  }
+  .leftnav {
+    flex: 30%;
+    background-color:rgba(0, 0, 0, 0.027) ;
+    display:inherit;
+    align-items : center;
+    flex-direction:column;
+  }
+  .leftnav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-family: "Dosis";
+    font-size: 25px;
+    color: black;
+  }
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight:bold;
+    font-style:normal;
+    font-size: 38px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+  }
+  .material-icons a{
+    text-decoration: none;
+    font-weight: lighter;
+  }
+  section{
+    display: flex;
+    flex-direction:row;
+  }
+  section p{
+    text-align: justify;
+    font-family:'Open Sans';
+  }
+  @media screen and (max-width:360px) {
+    body{width: 115%;}
+    footer{width:115%}
+  }
+  @media screen and (min-width:800px) {
+    .leftnav{flex: 15%;}
+  }
