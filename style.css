@@ -1,5 +1,6 @@
 header{
     background-color: transparent;
+
 }
 footer{
   display: inline-flex;
@@ -13,12 +14,9 @@ footer h5{
   padding: 5px;
 }
 .h2{
-  text-align: left;
   font-family: 'Dosis';
-  padding-left: 5px;
-  padding-right: 5px;
-  padding:5px 5px 5px;
-
+  font-weight: bold;
+  font-size: 16px;
 }
 #icon1{
     padding-right:3%;
@@ -28,14 +26,14 @@ footer h5{
     display:flex;
     background-color:transparent;
     align-items:center;
+    justify-items: center;
     flex-direction: row;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 100%;
   }
 .flex-container  div {
     background-color: transparent;
-    padding-right: 40px;
-    flex: 4;
+    padding-right: 10px;
+    flex: 5;
   }
   .foter{
    bottom: 15px;
@@ -123,10 +121,46 @@ footer h5{
     text-align: justify;
     font-family:'Open Sans';
   }
-  @media screen and (max-width:360px) {
-    body{width: 115%;}
-    footer{width:115%}
+  .unav{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 5px 0px;
+    align-items: center;
+    justify-content:space-around;
+    position:sticky;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.096);
+    width: 100%;
   }
-  @media screen and (min-width:800px) {
-    .leftnav{flex: 15%;}
+  .butn
+  {
+    background-color: transparent;
+    padding: 5px;
+    color:black;
+    border-style:none;
+    box-sizing: unset;
+    text-align: center;
   }
+  .unav div{
+    /*align-items: center;*/
+    text-align-last: auto;
+  }
+    .butn:hover
+    {
+      
+      background-color:white;
+    }
+    .unav:hover
+    {
+      background-color:yellow;
+    }
+    @media screen and (max-width:414px) {
+      body{width: 112%;}
+      section{width: 120%;}
+      footer{width:115%;}
+      .unav{/*flex-direction: column;width:114%;*/  display: none;}
+      .flex-container{width:110%;}
+    }
+    @media screen and (min-width:800px) {
+      .leftnav{flex: 15%;}
+    }
